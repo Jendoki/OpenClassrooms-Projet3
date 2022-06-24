@@ -1,0 +1,10 @@
+form {
+    input[type=text] {
+        background-color: $cl-grey;
+        width: 100%;
+        height: 40px;
+        border: none;
+        box-shadow: inset 0px 2px 5px grey;
+        @include center-text;
+      }
+}
