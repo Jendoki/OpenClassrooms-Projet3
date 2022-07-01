@@ -1,6 +1,7 @@
 header {
     img {
         width: 50%;
-        @include center;
+        margin: 20px 0px;
+        @include center-block;
     }
 }
