@@ -17,7 +17,7 @@ header img {
 
 button {
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 30px;
   border: none;
   color: white;
   font-weight: bold;
@@ -26,45 +26,37 @@ button {
   box-shadow: 5px 2px 10px #d4d4d4;
 }
 
-.step {
+.step, .step--active {
   background-color: #f7f7f7;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   margin: 20px 0;
   width: 80%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 5px 2px 10px #d4d4d4;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
-.step i {
+.step .flex, .step--active .flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 40px;
+}
+.step i, .step--active i {
   color: #6e6e6e;
   font-size: 25px;
-  margin-right: 30px;
+  margin: 0px 30px;
+  width: 20px;
 }
 .step--active {
   background-color: #f2eafb;
-  border-radius: 20px;
-  padding: 10px 15px;
-  margin: 20px 0;
-  width: 80%;
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 5px 2px 10px #d4d4d4;
-  margin-left: auto;
-  margin-right: auto;
 }
 .step--active i {
   color: #9356DC;
-  font-size: 25px;
-  margin-right: 30px;
 }
 .step--number {
   background-color: #9356DC;
@@ -72,11 +64,67 @@ button {
   padding: 5px 10px;
   border-radius: 100px;
   position: relative;
-  right: 40px;
+  right: 30px;
+}
+
+.restaurant-box {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 2px 10px #d4d4d4;
+  height: 275px;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.restaurant-box--img-container {
+  height: 200px;
+}
+.restaurant-box--img-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant-box--flex-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 30px;
+}
+.restaurant-box--flex-ctn div {
+  flex-direction: column;
+  text-align: left;
+}
+.restaurant-box--flex-ctn div h4 {
+  padding: 0px;
+  margin: 5px 0px 5px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.restaurant-box--flex-ctn div p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+.restaurant-box--flex-ctn i {
+  align-self: center;
+  margin-right: 10px;
+}
+
+body {
+  margin: 0px;
 }
 
 .loc-input {
   background-color: #ededed;
+  color: #3b3b3b;
   width: 100%;
   min-height: 40px;
   border: none;
@@ -87,14 +135,19 @@ button {
 }
 .loc-input p {
   margin-left: 15px;
+  font-weight: bolder;
 }
 
 .greyblock h3 {
   margin: 0px;
-  font-size: 25px;
+  font-size: 26px;
+  font-weight: bolder;
 }
 .greyblock p {
   margin-bottom: 30px;
+  font-size: 20px;
+  color: #6e6e6e;
+  font-weight: light;
 }
 
 .welcome {

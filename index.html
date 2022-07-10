@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>ohmyfood</title>
 </head>
@@ -33,47 +36,83 @@
                 <h3>Fonctionnement</h3>
                 <div class="step">
                     <div class="step--number">1</div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <p>Choisissez un restaurant</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step--number">2</div>
-                    <i class="fa-solid fa-bars"></i>
-                    <p>Composez votre menu</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Composez votre menu</p>
+                    </div>
                 </div>
                 <div class="step--active">
                     <div class="step--number">3</div>
-                    <i class="fa-solid fa-store"></i>
-                    <p>Dégustez au restaurant</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
             </section>
             <section class="greyblock">
                 <h3>Restaurants</h3>
-                <div>
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="Restaurant La palette du goût">
-                    <h4>La palette du goût</h4>
-                    <p>Ménilmontant</p>
-                    piti coeur
+                <div class="restaurant-box">
+                    <div class="restaurant-box--img-container">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                            alt="Restaurant La palette du goût">
+                    </div>
+                    <div class="restaurant-box--flex-ctn">
+                        <div>
+                            <h4>La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                    </div>
                 </div>
-                <div>
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant La note enchantée">
-                    <h4>La note enchantée</h4>
-                    <p>Charonne</p>
-                    piti coeur
+                <div class="restaurant-box">
+                    <div class="restaurant-box--img-container">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant La note enchantée">
+                    </div>
+                    <div class="restaurant-box--flex-ctn">
+                        <div>
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                    </div>
                 </div>
-                <div>
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant À la française">
-                    <h4>À la française</h4>
-                    <p>Cité Rouge</p>
-                    piti coeur
                 </div>
-                <div>
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                        alt="Restaurant Le délice des sens">
-                    <h4>Le délice des sens</h4>
-                    <p>Folie-Méricourt</p>
-                    piti coeur
+                <div class="restaurant-box">
+                    <div class="restaurant-box--img-container">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                            alt="Restaurant À la française">
+                    </div>
+                    <div class="restaurant-box--flex-ctn">
+                        <div>
+                            <h4>À la française</h4>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                    </div>
+                </div>
+                <div class="restaurant-box">
+                    <div class="restaurant-box--img-container">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="Restaurant Le délice des sens">
+                    </div>
+                    <div class="restaurant-box--flex-ctn">
+                        <div>
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- <i class="fa-solid fa-heart"></i> -->
+                    </div>
                 </div>
             </section>
         </article>
