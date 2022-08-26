@@ -1,5 +1,5 @@
 button {
-    padding: 15px;
+    padding: 15px 20px;
     border-radius: 30px;
     border: none;
     color: white;
@@ -7,4 +7,6 @@ button {
     background: $cl-primary;
     background: linear-gradient(352deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
     @include shadow-grey;
+    font-size: 16px;
+    font-weight: 500;
 }

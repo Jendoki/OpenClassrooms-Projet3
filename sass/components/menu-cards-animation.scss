@@ -1,0 +1,27 @@
+.menu-cards {
+    animation: menu-animation 1500ms
+}
+
+@for $i from 1 through 3 {
+    .menu-card:nth-child(#{$i}) { 
+        animation-delay: $i * 1500ms; 
+    }
+}
+
+@for $i from 1 through 3 {
+    .menu-card:nth-child(#{$i}) {
+      margin-left: $i *100px;
+    }
+}
+
+@keyframes menu-animation{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

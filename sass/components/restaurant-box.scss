@@ -9,6 +9,7 @@
     margin-bottom: 20px;
     &--img-container {
         height: 200px;
+        position: relative;
         img {
             display: block;
             width: 100%;
@@ -16,6 +17,7 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
+            image-rendering: auto;
         }
     }
     &--flex-ctn {

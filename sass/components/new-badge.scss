@@ -1,0 +1,12 @@
+.new-badge {
+    background-color: $cl-tertiary;
+    color: darken($cl-tertiary, 35);
+    font-weight: bold;
+    width: auto;
+    padding: 7px 12px;
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    border-radius: 2px;
+    box-shadow: 5px 2px 5px darken($cl-grey, 60);
+}

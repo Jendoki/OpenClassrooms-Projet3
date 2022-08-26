@@ -1,7 +1,13 @@
 header {
+    display: flex;
+    padding: 20px;
     img {
         width: 50%;
-        margin: 20px 0px;
+        align-self: center;
         @include center-block;
+    }
+    i {
+        align-self: center;
+        font-size: 25px;
     }
 }

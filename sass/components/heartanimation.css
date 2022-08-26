@@ -1,0 +1,15 @@
+.restaurant-box--flex-ctn .fa-regular {
+  position: absolute;
+  right: 40px;
+}
+.restaurant-box--flex-ctn .fa-solid {
+  color: rgb(147, 86, 220);
+  color: linear-gradient(187deg, rgb(147, 86, 220) 10%, rgb(255, 121, 218) 100%);
+  position: absolute;
+  right: 40px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.restaurant-box--flex-ctn .fa-solid:active {
+  opacity: 1;
+}/*# sourceMappingURL=heartanimation.css.map */

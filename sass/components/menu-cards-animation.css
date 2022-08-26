@@ -1,0 +1,53 @@
+.menu-cards {
+  -webkit-animation: menu-animation 1500ms;
+          animation: menu-animation 1500ms;
+}
+
+.menu-card:nth-child(1) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.menu-card:nth-child(2) {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
+.menu-card:nth-child(3) {
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+
+.menu-card:nth-child(1) {
+  margin-left: 100px;
+}
+
+.menu-card:nth-child(2) {
+  margin-left: 200px;
+}
+
+.menu-card:nth-child(3) {
+  margin-left: 300px;
+}
+
+@-webkit-keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=menu-cards-animation.css.map */

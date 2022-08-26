@@ -3,8 +3,15 @@
 @import "./utils/mixins";
 @import "./utils/functions";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./components/greyblock";
 @import "./components/button";
 @import "./components/step";
-@import "./components/restaurant-box.scss";
+@import "./components/restaurant-box";
+@import "./components/new-badge";
+@import "./components/menu-container.scss";
+@import "./components/menu-section.scss";
+@import "./components/menu-card.scss";
+@import "./components/heartanimation.scss";
+@import "./components/menu-cards-animation.scss";
 @import "./pages/accueil";
