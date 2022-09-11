@@ -1,27 +1,24 @@
-.menu-cards {
-    animation: menu-animation 1500ms
+.entrees,
+.main-course,
+.desserts {
+  animation: menu-animation 1500ms both;
 }
 
-@for $i from 1 through 3 {
-    .menu-card:nth-child(#{$i}) { 
-        animation-delay: $i * 1500ms; 
-    }
+.main-course {
+  animation-delay: 1s;
 }
 
-@for $i from 1 through 3 {
-    .menu-card:nth-child(#{$i}) {
-      margin-left: $i *100px;
-    }
+.desserts {
+  animation-delay: 2s;
 }
 
-@keyframes menu-animation{
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-

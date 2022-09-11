@@ -1,17 +1,34 @@
 .restaurant-box--flex-ctn {
-    .fa-regular {
-        position: absolute;
-        right: 40px;
+  position: relative;
+  .fa-regular {
+    position: absolute;
+    right: 40px;
+  }
+  .fa-solid {
+    color: $cl-primary;
+    position: absolute;
+    right: 40px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .fa-solid:active {
+    opacity: 1;
+  }
+}
 
-    }
-    .fa-solid {
-        color: $cl-primary;
-        position: absolute;
-        right: 40px;
-        opacity: 0;
-        transition: 0.3s;
-    }
-    .fa-solid:active{ 
-        opacity: 1;
-      }
+.menu-container--insert--header {
+  .fa-regular {
+    position: absolute;
+    right: 20px;
+  }
+  .fa-solid {
+    color: $cl-primary;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .fa-solid:active {
+    opacity: 1;
+  }
 }

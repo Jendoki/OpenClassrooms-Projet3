@@ -222,8 +222,10 @@ button {
 .menu-card {
   background-color: white;
   border-radius: 20px;
-  padding: 10px 15px;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   box-shadow: 5px 2px 10px #d4d4d4;
 }
 .menu-card--title {
@@ -246,6 +248,9 @@ button {
   font-weight: bold;
 }
 
+.restaurant-box--flex-ctn {
+  position: relative;
+}
 .restaurant-box--flex-ctn .fa-regular {
   position: absolute;
   right: 40px;
@@ -261,36 +266,36 @@ button {
   opacity: 1;
 }
 
-.menu-cards {
-  -webkit-animation: menu-animation 1500ms;
-          animation: menu-animation 1500ms;
+.menu-container--insert--header .fa-regular {
+  position: absolute;
+  right: 20px;
+}
+.menu-container--insert--header .fa-solid {
+  color: #9356DC;
+  position: absolute;
+  right: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.menu-container--insert--header .fa-solid:active {
+  opacity: 1;
 }
 
-.menu-card:nth-child(1) {
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
+.entrees,
+.main-course,
+.desserts {
+  -webkit-animation: menu-animation 1500ms both;
+          animation: menu-animation 1500ms both;
 }
 
-.menu-card:nth-child(2) {
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+.main-course {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-.menu-card:nth-child(3) {
-  -webkit-animation-delay: 4500ms;
-          animation-delay: 4500ms;
-}
-
-.menu-card:nth-child(1) {
-  margin-left: 100px;
-}
-
-.menu-card:nth-child(2) {
-  margin-left: 200px;
-}
-
-.menu-card:nth-child(3) {
-  margin-left: 300px;
+.desserts {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes menu-animation {
@@ -312,6 +317,71 @@ button {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+.menu-card:active .green-square {
+  -webkit-animation: green-square-animation 1500ms both;
+          animation: green-square-animation 1500ms both;
+}
+.menu-card:active .green-square .fa-circle-check {
+  -webkit-animation: circle-check-animation 1500ms;
+          animation: circle-check-animation 1500ms;
+}
+.menu-card--content {
+  flex-grow: 1;
+  margin: 10px 15px;
+  min-width: 20px;
+}
+.menu-card--content h4,
+.menu-card--content .menu-card--flex--subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu-card .green-square {
+  background-color: #99E2D0;
+  min-height: 100%;
+  width: 0;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card .green-square i {
+  color: white;
+}
+
+@-webkit-keyframes green-square-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+
+@keyframes green-square-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+@-webkit-keyframes circle-check-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle-check-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -342,7 +412,6 @@ body {
   margin-bottom: 30px;
   font-size: 20px;
   color: #6e6e6e;
-  font-weight: light;
 }
 .greyblock h4 {
   font-size: 25px;
@@ -370,4 +439,32 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (min-width: 769px) {
+  header img {
+    max-width: 20%;
+  }
+  .steps {
+    max-width: 50%;
+    margin: auto;
+  }
+  .restaurant-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-boxes .restaurant-box {
+    max-width: 40%;
+  }
+  .menu-container--inside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu-container--inside .menu-section {
+    margin-right: 20px;
+    min-width: 30%;
+    max-width: 60%;
+  }
 }/*# sourceMappingURL=main.css.map */

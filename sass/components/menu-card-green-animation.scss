@@ -1,0 +1,51 @@
+.menu-card {
+  &:active {
+    .green-square {
+      animation: green-square-animation 1500ms both;
+      .fa-circle-check {
+        animation: circle-check-animation 1500ms;
+      }
+    }
+  }
+  &--content {
+    flex-grow: 1;
+    margin: 10px 15px;
+    min-width: 20px;
+    h4,
+    .menu-card--flex--subtitle {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .green-square {
+    background-color: $cl-tertiary;
+    min-height: 100%;
+    width: 0;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      color: white;
+    }
+  }
+}
+
+@keyframes green-square-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80px;
+  }
+}
+
+@keyframes circle-check-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

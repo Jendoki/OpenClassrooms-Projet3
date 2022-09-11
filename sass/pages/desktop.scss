@@ -1,0 +1,31 @@
+@media only screen and (min-width: 769px) {
+  header {
+    img {
+      max-width: 20%;
+    }
+  }
+  .steps {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .restaurant-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .restaurant-box {
+      max-width: 40%;
+    }
+  }
+
+  .menu-container--inside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .menu-section {
+      margin-right: 20px;
+      min-width: 30%;
+      max-width: 60%;
+    }
+  }
+}
