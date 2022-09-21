@@ -1,12 +1,21 @@
 button {
-    padding: 15px 20px;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    background: $cl-primary;
-    background: linear-gradient(352deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
-    @include shadow-grey;
-    font-size: 16px;
-    font-weight: 500;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: $cl-primary;
+  background: linear-gradient(
+    352deg,
+    rgba(147, 86, 220, 1) 10%,
+    rgba(255, 121, 218, 1) 100%
+  );
+  @include shadow-grey;
+  font-size: 16px;
+  font-weight: 500;
+  &:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+    @include shadow-grey-darker;
+  }
 }

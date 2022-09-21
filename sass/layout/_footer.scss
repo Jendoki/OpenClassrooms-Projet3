@@ -1,13 +1,16 @@
 footer {
-    background-color: darken($cl-grey, 70);
+  background-color: darken($cl-grey, 70);
+  color: white;
+  padding: 30px;
+  img {
+    fill: white;
+    width: 100px;
+  }
+  i {
+    margin-right: 10px;
+    width: 20px;
+  }
+  a {
     color: white;
-    padding: 30px;
-    img {
-        fill: white;
-        width: 100px;
-    }
-    i {
-        margin-right: 10px;
-        width: 20px;
-    }
+  }
 }

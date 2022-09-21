@@ -1,0 +1,21 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: $cl-lightgrey;
+  @include center-flex;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  animation: loader-animation 1000ms both;
+  animation-delay: 3s;
+}
+
+@keyframes loader-animation {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    z-index: 0;
+  }
+}
