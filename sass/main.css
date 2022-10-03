@@ -273,7 +273,7 @@ button:hover {
   opacity: 0;
   transition: 0.3s;
 }
-.restaurant-box--flex-ctn .fa-solid:active {
+.restaurant-box--flex-ctn .fa-solid:hover {
   opacity: 1;
 }
 
@@ -288,7 +288,7 @@ button:hover {
   opacity: 0;
   transition: 0.3s;
 }
-.menu-container--insert--header .fa-solid:active {
+.menu-container--insert--header .fa-solid:hover {
   opacity: 1;
 }
 
@@ -338,11 +338,11 @@ button:hover {
     transform: translateY(0);
   }
 }
-.menu-card:active .green-square {
+.menu-card:hover .green-square {
   -webkit-animation: green-square-animation 1500ms both;
           animation: green-square-animation 1500ms both;
 }
-.menu-card:active .green-square .fa-circle-check {
+.menu-card:hover .green-square .fa-circle-check {
   -webkit-animation: circle-check-animation 1500ms;
           animation: circle-check-animation 1500ms;
 }
@@ -406,6 +406,7 @@ button:hover {
 .loader {
   width: 100vw;
   height: 100vh;
+  color: #9356DC;
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
@@ -425,7 +426,7 @@ button:hover {
   }
   100% {
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 
@@ -435,7 +436,7 @@ button:hover {
   }
   100% {
     opacity: 0%;
-    z-index: 0;
+    z-index: -1;
   }
 }
 body {

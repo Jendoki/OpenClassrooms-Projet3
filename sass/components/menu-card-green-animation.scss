@@ -1,5 +1,5 @@
 .menu-card {
-  &:active {
+  &:hover {
     .green-square {
       animation: green-square-animation 1500ms both;
       .fa-circle-check {
